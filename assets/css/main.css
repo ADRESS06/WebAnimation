@@ -1,0 +1,181 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, aqua, violet, aqua);
+}
+.search{
+    height: 100%;
+    opacity: 60%;
+}
+.search:hover{
+    height: 100%;
+    opacity: 80%;
+    transition: linear 1s;
+}
+.clikeable{
+    cursor: pointer;
+}
+.botonWBback{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 56px;
+    position: relative;
+    padding: 3px;
+    border: 2px solid black;
+    transform: scale(0.7);
+    margin-top: -4px;
+    opacity: 60%;
+    
+}
+.botonWBback:hover{
+    opacity: 90%;
+    transition: linear 1s;
+}
+.botonWBcircle{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 56px;
+    position: absolute;
+    transition: ease-in-out 500ms;
+}
+.tema{
+    background-color: white;
+    color: black;
+    transition: ease-in-out 500ms;
+}
+.tema-oscuro{
+    background-color: black;
+    color: white;
+}
+.tema2{
+    background-color: white;
+    color: black;
+    transition: ease-in-out 500ms;
+    margin-top: 2%;
+}
+.tema-oscuro2{
+    background-color: black;
+    color: white;
+    margin-top: 2%;
+}
+.tituloWeb{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.panel{
+    width: 80vw;
+    margin: 0  auto;
+    margin-bottom: 5%;
+    padding: 2em;
+    border: 1px solid;
+    border-radius: 14px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px gray;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 1%;
+}
+.efecto{
+    margin: 0  auto;
+    border: 1px solid;
+    margin: 0  auto;
+    width: 95%;
+    height: 60vh;
+    border-radius: 14px;
+    margin-bottom: 2%;
+}
+.footer{
+    width: 95%;
+    margin: auto  auto;
+    padding: 2%;
+    border: 1px solid;
+    border-radius: 14px;
+}
+.footer a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: auto;    
+}
+/*--- botones--- */
+.bresplandor{
+    animation: resplandor 2s ease-in-out infinite;
+    border: none;
+    border-radius: 50px;
+    padding: 1em;
+}
+.bbarrido{
+    animation: barrido 2s ease-in-out infinite;
+    border: none;
+    border-radius: 50px;
+    padding: 1em;
+}
+/*--- botones ---*/
+.resplandor{
+    background-color: rgb(137, 138, 138);
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    animation: resplandor 1s ease-in-out infinite;
+}
+@keyframes resplandor {
+    0%{background-image: radial-gradient(lightblue, yellow 0%, lightblue,);}
+    5%{background-image: radial-gradient(lightblue, yellow 5%, lightblue);}
+    10%{background-image: radial-gradient(lightblue, yellow 10%, lightblue);}
+    15%{background-image: radial-gradient(lightblue, yellow 15%, lightblue);}
+    20%{background-image: radial-gradient(lightblue, yellow 20%, lightblue);}
+    25%{background-image: radial-gradient(lightblue, yellow 25%, lightblue);}
+    30%{background-image: radial-gradient(lightblue, yellow 30%, lightblue);}
+    35%{background-image: radial-gradient(lightblue, yellow 35%, lightblue);}
+    40%{background-image: radial-gradient(lightblue, yellow 40%, lightblue);}
+    45%{background-image: radial-gradient(lightblue, yellow 45%, lightblue);}
+    50%{background-image: radial-gradient(lightblue, yellow 50, lightblue);}
+    55%{background-image: radial-gradient(lightblue, yellow 55%, lightblue);}
+    65%{background-image: radial-gradient(lightblue, yellow 60%, lightblue);}
+    70%{background-image: radial-gradient(lightblue, yellow 65%, lightblue);}
+    75%{background-image: radial-gradient(lightblue, yellow 70%, lightblue);}
+    80%{background-image: radial-gradient(lightblue, yellow 75%, lightblue);}
+    85%{background-image: radial-gradient(lightblue, yellow 80%, lightblue);}
+    90%{background-image: radial-gradient(lightblue, yellow 85%, lightblue);}
+    95%{background-image: radial-gradient(lightblue, yellow 90%, lightblue);}
+    100%{background-image: radial-gradient(lightblue, yellow 100%, lightblue);}
+}
+.barrido{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    animation: barrido 1s ease-in-out infinite;
+}
+@keyframes barrido {
+    0%{background-image: linear-gradient(to top right, violet , aqua);transition: ease-in-out 1ms}
+    10%{background-image: linear-gradient(to top right, aqua, violet 10%, aqua);transition: ease-in-out 1ms}
+    15%{background-image: linear-gradient(to top right, aqua, violet 15%, aqua);transition: ease-in-out 1ms}
+    20%{background-image: linear-gradient(to top right, aqua, violet 20%, aqua);transition: ease-in-out 1ms}
+    25%{background-image: linear-gradient(to top right, aqua, violet 25%, aqua);transition: ease-in-out 1ms}
+    30%{background-image: linear-gradient(to top right, aqua, violet 30%, aqua);transition: ease-in-out 1ms}
+    35%{background-image: linear-gradient(to top right, aqua, violet 35%, aqua);transition: ease-in-out 1ms}
+    40%{background-image: linear-gradient(to top right, aqua, violet 40% aqua);transition: ease-in-out 1ms}
+    45%{background-image: linear-gradient(to top right, aqua, violet 45%, aqua);transition: ease-in-out 1ms}
+    50%{background-image: linear-gradient(to top right, aqua, violet 50%, aqua);transition: ease-in-out 1ms}
+    55%{background-image: linear-gradient(to top right, aqua, violet 55%, aqua);transition: ease-in-out 1ms}
+    60%{background-image: linear-gradient(to top right, aqua, violet 60%, aqua);transition: ease-in-out 1ms}
+    65%{background-image: linear-gradient(to top right, aqua, violet 65%, aqua);transition: ease-in-out 1ms}
+    70%{background-image: linear-gradient(to top right, aqua, violet 70%, aqua);transition: ease-in-out 1ms}
+    75%{background-image: linear-gradient(to top right, aqua, violet 75%, aqua);transition: ease-in-out 1ms}
+    80%{background-image: linear-gradient(to top right, aqua, violet 80%, aqua);transition: ease-in-out 1ms}
+    85%{background-image: linear-gradient(to top right, aqua, violet 85%, aqua);transition: ease-in-out 1ms}
+    90%{background-image: linear-gradient(to top right, aqua, violet 90%, aqua);transition: ease-in-out 1ms}
+    95%{background-image: linear-gradient(to top right, aqua, violet 95%, aqua);transition: ease-in-out 1ms}
+    100%{background-image: linear-gradient(to top right, aqua, violet);transition: ease-in-out 1ms}
+}
